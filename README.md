@@ -41,7 +41,7 @@ Testing:            pnpm run test
 Test coverage:      pnpm run test:coverage
 ```
 
-## Docker Command
+## Docker
 
 ```shell
 docker-compose up
