@@ -8,7 +8,9 @@ I have followed the instructions outlined in the requirement document and made a
     
 ## Implemented solution for the above problem. 
 
-I have implemented a Retry Mechanism to address the occasional delays in API responses. This mechanism incorporates exponential backoff, which automatically resend the request after a delay, ensuring that the API eventually returns the data. While this approach has resolved the issue, I've also considered the potential for other undesirable behaviors, such as continuous failures, which could result in a poor user experience. In this context, I've integrated the Circuit Breaker pattern as a prudent strategy when dealing with remote API calls, particularly in situations where the API might encounter timeouts, failures, or high latency. The Circuit Breaker pattern is a valuable addition that enhances the application's resilience by preventing repeated attempts to access an unreliable or failing third-party service. This contributes to an overall improvement in the application's reliability and performance.
+- I have implemented a Retry Mechanism to address the occasional delays in API responses. This mechanism incorporates exponential backoff, which automatically resend the request after a delay, ensuring that the API eventually returns the data. 
+
+- While this approach has resolved the issue, I've also considered the potential for other undesirable behaviors, such as continuous failures, which could result in a poor user experience. In this context, I've integrated the Circuit Breaker pattern as a prudent strategy when dealing with remote API calls, particularly in situations where the API might encounter timeouts, failures, or high latency. The Circuit Breaker pattern is a valuable addition that enhances the application's resilience by preventing repeated attempts to access an unreliable or failing third-party service. This contributes to an overall improvement in the application's reliability and performance.
 
 
 ## Tools used
@@ -52,7 +54,9 @@ Deployed Docker Image: https://hub.docker.com/r/akeren/duplo-credit-score-servic
 ```
 ## Further Enhancement
 
-- A service access restriction will be put in place to ensure that only authorized clients can access the system. This will be implemented at the infrastructure level through the creation of a mechanism that enables backend services to communicate exclusively via their internal DNS URLs. Additionally, IP whitelisting will be applied for third-party services, specifically the Taxpayer's service, to further enhance security and ensure that only approved IP addresses are permitted to access the system.
+- A service access restriction will be put in place to ensure that only authorized clients can access the system. This will be implemented at the infrastructure level through the creation of a mechanism that enables backend services to communicate exclusively via their internal DNS URLs. 
+
+- Additionally, IP whitelisting will be applied for third-party services, specifically the Taxpayer's service, to further enhance security and ensure that only approved IP addresses are permitted to access the system.
 
 - End to end writing of unit and integration test cases
 
