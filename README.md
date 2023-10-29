@@ -58,7 +58,12 @@ Deployed Docker Image: https://hub.docker.com/r/akeren/duplo-credit-score-servic
 
 - Additionally, IP whitelisting will be applied for third-party services, specifically the Taxpayer's service, to further enhance security and ensure that only approved IP addresses are permitted to access the system.
 
-- End to end writing of unit and integration test cases
+- I thoroughly addressed unit testing cases, further improvements to focus on end-to-end integration test case development.
+
+
+
+
+
 
 
 
