@@ -39,7 +39,7 @@
     "express-validator": "^7.0.1",
     "helmet": "^7.0.0",
     "jest": "^29.7.0",
-    "mongodb": "5.2.0",
+    "mongodb": "5.8.0",
     "mongodb-memory-server": "^9.0.1",
     "mongoose": "^7.6.3",
     "opossum": "^8.1.2",
